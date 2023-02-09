@@ -1,0 +1,4 @@
+1,지코,아무노래,C:\Users\user\git\MiniBananas\MusicQuiz\src\music\song20to23\1. 지코_아무노래.mp3
+2,오마이걸,살짝 설렜어,C:\Users\user\git\MiniBananas\MusicQuiz\src\music\song20to23\2. 오마이걸_살짝 설렜어.mp3
+3,이무진,신호등,C:\Users\user\git\MiniBananas\MusicQuiz\src\music\song20to23\3. 이무진_신호등.mp3
+4,서동현,정이라고 하자,C:\Users\user\git\MiniBananas\MusicQuiz\src\music\song20to23\4. 서동현_정이라고 하자.mp3

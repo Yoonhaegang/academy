@@ -1,0 +1,4 @@
+1,아이유,너랑 나,C:\Users\user\git\MiniBananas\MusicQuiz\src\music\song10to19\1. 아이유-너랑 나.mp3
+2,EXID,위아래,C:\Users\user\git\MiniBananas\MusicQuiz\src\music\song10to19\2. EXID_위아래.mp3
+3,WINNER,공허해,C:\Users\user\git\MiniBananas\MusicQuiz\src\music\song10to19\3. WINNER_공허해.mp3
+4,버스커버스커,벚꽃 엔딩,C:\Users\user\git\MiniBananas\MusicQuiz\src\music\song10to19\4. 버스커버스커_벚꽃 엔딩.mp3

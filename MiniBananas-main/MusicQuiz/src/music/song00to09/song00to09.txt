@@ -1,0 +1,4 @@
+1,빅뱅,거짓말,C:\Users\user\git\MiniBananas\MusicQuiz\src\music\song00to09\1. 빅뱅_거짓말.mp3
+2,버즈,겁쟁이,C:\Users\user\git\MiniBananas\MusicQuiz\src\music\song00to09\2. 버즈_겁쟁이.mp3
+3,비,태양을 피하는 방법,C:\Users\user\git\MiniBananas\MusicQuiz\src\music\song00to09\3. 비_태양을 피하는 방법.mp3
+4,쥬얼리,니가 참 좋아,C:\Users\user\git\MiniBananas\MusicQuiz\src\music\song00to09\4. 쥬얼리_니가 참 좋아.mp3
