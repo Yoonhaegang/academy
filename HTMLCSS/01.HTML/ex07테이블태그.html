@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        1) 테이블을 만들겠다고 선언하는 공간
+    -->
+    <table border="1px solid black" width="200px" align="center">
+        <!-- 
+            표의 제목 : caption
+        -->
+        <caption>메뉴판</caption>
+        <!-- 
+            2) 테이블의 한 줄을 생성하는 방법
+            table row -> <tr></tr>
+        -->
+        <tr bgcolor="lightblue">
+            <!-- 
+                3) 테이블의 한 칸을 생성하는 방법
+                table data -> <td></td>
+            -->
+            <!-- 
+                table header <th></th>
+                표의 헤더 부분을 작성할 때 용이
+                글자가 굵어지고 가운데 정렬
+            -->
+            <th colspan="2">메뉴 / 가격</th>
+        </tr>
+        <!-- 
+            [문제] 메뉴를 3개 이상 구성해보자 (tr>td*2)*3 Emmet 기능
+        -->
+        <!-- 
+            표의 병합 기능 
+            (1) 위, 아래 병합 (row들끼리의 병합) rowspan
+            (2) 좌, 우 병합 colspan
+        -->
+        <tr>
+            <td>핫초코</td>
+            <td rowspan="2">3000</td>
+        </tr>
+        <tr>
+            <td>아이스크림</td>
+
+        </tr>
+        <tr>
+            <td>믹스커피</td>
+            <td>300</td>
+        </tr>
+    </table>
+</body>
+</html>

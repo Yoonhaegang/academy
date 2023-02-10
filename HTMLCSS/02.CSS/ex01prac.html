@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS연습</title>
+    <!-- CSS는 body태그 안에 적지 않는다 -->
+    <style>
+        /* 스타일은 설정값이기 때문에 head태그 안에 작성 */
+        /* sytle이라는 태그 내에만 작성 */
+        /* 디자인을 할거야! */
+        /* - 무엇을? '선택자' */
+        /* - 어떻게? '선언' */
+        /* 선택자 {
+            선언문
+            속성 : 값;
+        } */
+        h1 {
+            color: black;
+            background-color: beige;
+            width: 50%;
+        }
+
+        h2 {
+            color: orange;
+            background-color: rgb(96, 91, 91);
+            width: 50%;
+        }
+        /* 폰트 인터넷에서 가져옴 */
+        @font-face {
+            font-family: 'KyoboHandwriting2021sjy';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KyoboHandwriting2021sjy.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'KyoboHandwriting2021sjy_b'; /* 이름을 바꾸어서 커스텀할 수 있음 */
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KyoboHandwriting2021sjy.woff2') format('woff2');
+            font-weight: bold;
+        }
+
+        p {
+            /* 1. font-family : 글꼴 (최대한 유사한 느낌의 글꼴들) */
+            /* 메이플스토리체가 있다면 메이플스토리체를 사용하고 그렇지 않다면 G마켓 산스 TTF... */
+            /* font-family: '메이플스토리체', 'G마켓 산스 TTF', '휴먼엑스포 보통', '궁서체'; */
+            /* 2. font-size: 글씨크기 */
+            /* 기본은 16px이다 */
+            font-family: 'KyoboHandwriting2021sjy_b';
+            font-size: 20px;
+            /* 3. font-weight : 글자 굵기 (html <b>태그의 대체) */
+            /* bold기본은 700px, 100 ~ 900px */
+            font-weight: 900;
+            /* italic 기울게 (보통 인용문을 작성시에 사용) */
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Super Minions</p>
+    <p>Super Minions</p>
+    <p>Super Minions</p>
+    <h1>오늘은 즐거운 금요일</h1>
+    <h1>새로운 h1태그</h1>
+    <h2>내일은 즐거운 토요일</h2>
+</body>
+
+</html>
