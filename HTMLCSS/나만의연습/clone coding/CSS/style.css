@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+* {
+    margin: 0; /* 마진 값 초기화 */
+    padding: 0; /* 패딩 값 초기화 */
+    box-sizing: border-box; /* 박스 영역은 테두리까지 지정 */
+}
+
+a {
+    /* 링크 밑줄 제거 */
+    text-decoration: none; 
+}
+ul {
+    list-style: none;
+}
+
+#container {
+    margin: 0 auto; /* 화면 중앙에 배치 */
+    width: 1200px; /* 넓이 지정 */
+}
+
+/* 헤더 영역 */
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #07c;
+}
+/* 로고 영역 */
+#logo {
+    float: left; /* 왼쪽으로 플로팅 */
+    width: 250px; /* 넓이 */
+    height: 100px; /* 높이 */
+    line-height: 100px;
+    padding-left: 20px;
+}
+#logo h1{
+    font-family: 'Merienda', cursive;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    /* 그림자 색 */
+    text-shadow: 0 -1px 0 #222;
+}
+/* 내비게이션 영역 */
+nav {
+    float: right; /* 오른쪽으로 플로팅 */
+    width: 900px;
+    height: 100px;
+    /* background-color: green; */
+    padding-top: 40px;
+}
+
+#topMenu {
+    height: 60px;
+}
+#topMenu > li{
+    float: left;
+    /* 서브메뉴를 absolute로 만들기 위해 부모 요소를 relative로 지정 */
+    position: relative;
+}
+#topMenu > li > a {
+    /* 링크 텍스트는 블록으로 */
+    display: block;
+    color : #fff;
+    /* 폰트 굵기 */
+    font-weight: 600;
+    /* 그림자 추가 */
+    text-shadow: 0 1px #07c;
+    padding: 20px 60px;
+}
+#topMenu > li > a:hover {
+    /* 마우스를 올리면 색 바뀜 */
+    color: #000;
+    /* 글자가 굵어지지 않도록 설정 */
+    text-shadow: 0 -1px #07c;
+}
+#topMenu > li > ul {
+    /* 서브 메뉴를 처음에는 감춤 */
+    display: none;
+    /* 서브메뉴 포지셔닝 */
+    position: absolute;
+    width: 160px;
+    /* 배경 투명색 지정 */
+    background-color: rgba(255, 255, 255, 0.6);
+    left: 20px;
+    margin: 0;
+}
+#topMenu > li > ul > li {
+    /* 서브메뉴 항목 지정 */
+    padding: 10px 10px 10px 30px;
+}
+#topMenu > li > ul > li > a {
+    font-size: 14px;
+    padding: 10px;
+    color: #000;
+}
+#topMenu > li:hover > ul {
+    /* 메인 메뉴 항목 위로 오버하면 서브메뉴 표시 */
+    display: block;
+    /* 슬라이드 쇼에 가리지 않게 조절 */
+    z-index: 10;
+}
+#topMenu > li > ul > li > a:hover {
+    /* 서브메뉴 마우스 오버하면 색상 바꾸기 */
+    color: #f00;
+}
+/* 이미지 슬라이드 쇼 영역 */
+#slideShow {
+    /* 플로팅 해제 */
+    clear: both; 
+    width: 100%;
+    height: 300px;
+    background-color: orange;
+    /* 영역 넘치면 감춤 */
+    overflow: hidden;
+}
+/* 콘텐츠 영역 */
+#contents {
+    width: 100%;
+    height: 300px;
+}
+/* 텝 매뉴 영역 */
+#tabMenu {
+    float: left;
+    width: 600px;
+    height: 100%;
+    background-color: violet;
+}
+/* 퀵 링크 영역 */
+#links {
+    float: right;
+    width: 600px;
+    height: 100%;
+    background-color: skyblue;
+}
+/* 푸터 영역 */
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+}
