@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p, span {
+            width: 200px;
+            height: 200px;
+        }
+        /* 1. display : block
+            종류 : div, p 등등... -> 기본값 block
+            무조건 가로로 한줄의 영역을 전부 차지하는 속성
+            width, height 값 설정이 가능 */
+        /* 2. display : inline
+            종류 : span, a 등등... -> 기본값 inline
+            내가 담은 컨텐츠까지만 크기로 삼는 속성
+            width, height 값 설정 불가능  */
+
+        p {
+            background-color: pink;
+            display: inline;
+        }
+        span {
+            background-color: skyblue;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <p>p태그</p>
+    <p>p태그</p>
+    <p>p태그</p>
+
+    <span>span태그</span>
+    <span>span태그</span>
+    <span>span태그</span>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boxSizing</title>
+    <style>
+        div {
+            /* 내가 설정한 넓이 */
+            width: 500px;
+            /* 경계 선 */
+            border: 20px solid gray;
+            /* 안쪽여백 */
+            padding: 20px;
+        }
+
+        /* Box-Sizing : 요소의 크기를 화면에 표시하는 방식 */
+        /* (1) content-box (default값)
+           내가 설정한 넓이 = 컨텐츠의 넓이
+           컨텐츠의 영역만을 크기로 삼는다
+           패딩, 보더 값이 들어가면 들어간만큼 크기가 커진다
+           (2) border-box
+           내가 설정한 넓이 = border 안쪽까지의 넓이
+           content + padding + border = 내가 설정한 넓이
+           패딩, 보더 값이 들어가도 크기가 커지지 않는다
+
+           "나는 패딩은 주고 싶지만 , 크기가 커지길 바라진 않는다?"
+           -> box-sizing : border-box
+
+           "나는 패딩을 준 만큼, 크기를 키우고싶다?"
+           -> box-sizing : content-box
+             */
+        .cb {
+            margin-bottom: 30px;
+        }
+        .bb {
+            box-sizing: border-box;
+            margin-top: 30px;
+        }
+        .bb {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cb">
+        <p>content-box</p>
+    </div>
+    <div class="bb">
+        <p>border-box</p>
+    </div>
+</body>
+
+</html>

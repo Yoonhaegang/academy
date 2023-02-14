@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex02 선택자</title>
+    <style>
+        /* 선택자의 종류 */
+        /* (1) 전체 선택자 : 문서 내의 모든 요소를 선택 */
+        /* -> [*]아스타리크 기호 사용 */
+        * {
+            color: brown;
+        }
+        /* (2) 태그 선택자 : 특정 태그를 선택 */
+        /* 태그 기호 없이 태그의 이름으로 사용 */
+        li {
+            color: lightgreen;
+        }
+        /* 선택자들을 구분해서 지정해줘야하는 경우 */
+        /* 클래스 / 아이디 */
+        /* 클래스 -> 중복 가능
+           아이디 -> 중복 불가능
+        */
+        /* (3) 클래스 선택자 */
+        /* -> .클래스이름 */
+        /* 중복이 가능하기 때문에 재사용성이 뛰어남 */
+
+        .dinner {
+            color: blue;
+        }
+        /* (4) 아이디 선택자 */
+        /* -> #아이디이름 */
+        /* 중복이 불가능, 한 문서당 그 아이디는 1번만 사용가능 */
+        /* 로고, 검색창, 상단바와 같은 고유한 디자인에 사용 */
+        #salmon {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS</h1>
+    <p>웹페이지를 꾸며주는 스타일 시트 언어</p>
+    <ul>
+        <li>CSS 기본구조</li>
+        <li>CSS 선택자</li>
+        <li>CSS 스타일</li>
+    </ul>
+
+    <h1 class="dinner">오늘 뭐먹지?</h1>
+    <ul>
+        <li class="dinner" id="salmon">연어</li>
+        <li class="dinner" id="tuna">참치</li>
+        <li class="dinner" id="chick">닭가슴살</li>
+    </ul>
+</body>
+</html>

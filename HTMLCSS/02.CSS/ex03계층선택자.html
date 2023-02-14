@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex03 계층선택자</title>
+    <style>
+        /* 계층 선택자 이해하기 */
+        /* (1) 자손 선택자 - 기호 : 띄어쓰기 */
+
+        /* (1-1) div를 기준으로 자손인 span의 색 tomato */
+        div span {
+            color: tomato;
+        }
+
+        /* (1-2) div를 기준으로 자손인 li 의 색 blue */
+        div li {
+            color: blue;
+        }
+
+        /* (2) 자식 선택자 - 기호 : >  */
+        /* ol을 기준으로 자식인 span의 색 hotpink */
+        ol > span {
+            color: hotpink;
+        }
+
+        /* (3) 근접후행선택자 - 기호 : + */
+        /* li를 기준으로 근접해서 붙어있는 li의 색 green */
+        li + li {
+            color: green;
+        }
+
+        /* (4) 후행선택자 - 기호 : ~ */
+        /* 첫번째 li를 기준으로 형제관계인 li의 색 lime */
+        li ~ li {
+            color: lime;
+        }
+        /* (+) 두번째 li를 기준으로 하고 싶다면? */
+        /* Case 1) 클래스 or 아이디 이용하기 */
+        /* .second-li ~ li {
+            background-color: yellow;
+        } */
+        /* Case 2) child 문법 이용하기 */
+        /* 두번째 이상 : nth-child(숫자) */
+        /* 첫번째 : first-child() */
+        li:nth-child(2) ~ li {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <strong>우리 반 규칙!</strong>
+        <ol>
+            <li>지각하지 않기!</li>
+            <li class="second-li">결석하지 않기!</li>
+            <span>불가피할 땐 담임쌤한테 꼭 연락하기!</span>
+            <li>복습하기!</li>
+        </ol>
+    </div>
+</body>
+
+</html>

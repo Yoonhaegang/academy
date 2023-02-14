@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex06 none</title>
+    <style>
+        .answer {
+            display: none;
+        }
+
+        /* (1) 질문 위에 마우스를 올리면 -> hover
+           (2) 질문 바로 옆에 잇는 대답의 -> 근접 후행 +
+           (3) 답이 보이게 해줄 것 -> display: inline */
+        .question:hover + .answer {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <span class="question">Q. 여러분의 요즘 자주 듣는 노래는 무엇인가요?</span>
+    <span class="answer">A. GD & T.O.P - 쩔어</span>
+
+    <!-- 
+        Q. 바다가 좋아요? 산이 좋아요?
+        A. 바다
+
+        단, style을 전혀 손대지 않고 구현하기
+     -->
+    <br>
+    <span class="question">Q. 바다가 좋아요? 산이 좋아요?</span>
+    <span class="answer">A. 산</span>
+
+</body>
+
+</html>

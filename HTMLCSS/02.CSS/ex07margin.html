@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin</title>
+    <style>
+        body {
+            /* body 태그의 기본 margin 값은 8px */
+            margin: 0px;
+        }
+
+        h1~div {
+            /* display: block이라서 크기 지정 가능 */
+            width: 100px;
+            height: 100px;
+            /* background-color: aquamarine; */
+            /* margin : 경계선을 기준으로 바깥여백 */
+            /* margin: 50px; */
+            /* margin-left: 50px; */
+            /* margin-top: 0px; */
+            /* 정 가운데 위치 */
+            /* margin: auto; */
+            /* 마진 중첩 현상
+               인접한 태그간의 마진이 중첩이 되어 어느 한쪽의 마진이 상쇄되어버리는 현상 */
+        }
+
+        .red_box {
+            background-color: red;
+        }
+
+        .blue_box {
+            background-color: blue;
+            margin-left: 100px;
+        }
+
+        .green_box {
+            background-color: green;
+            margin-left: 200px;
+        }
+
+        .gray_box {
+            background-color: gray;
+            margin-left: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>실습</h1>
+    
+        <div class="red_box"></div>
+        <div class="blue_box"></div>
+    
+
+    <div class="green_box"></div>
+    <div class="gray_box"></div>
+</body>
+
+</html>
