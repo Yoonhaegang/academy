@@ -1,0 +1,20 @@
+div {
+    background-color: paleturquoise;
+    height: 300px;
+    /* 단위
+       (1) %
+       (2) view (vw, vh) */
+       
+    width: 100%;
+}
+/* (3) em: 부모의 크기에 따른 배수단위 */
+p {
+    font-size: 20px;
+}
+#em {
+    font-size: 2em;
+}
+/* (4) rem : 문서의 폰트 크기를 기준으로 하는 배수단위 */
+#rem {
+    font-size: 2rem;
+}

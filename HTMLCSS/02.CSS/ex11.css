@@ -1,0 +1,26 @@
+#black {
+    width: 120px;
+    height: 360px;
+    background-color: black;
+    padding-top: 20px;
+    padding-left: 20px;
+    border-radius: 20px;
+}
+#black > div {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    border: 3px solid lightcyan;
+}
+#red {
+    background-color: red;
+    
+}
+#yellow {
+    background: yellow;
+}
+#green {
+    background-color: green;
+}

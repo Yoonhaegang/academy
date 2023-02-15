@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선언방식</title>
+    <!-- 내부 방식
+         단점 : 보안에 불리 -->
+    <style>
+        h1 {
+            color: pink;
+        }
+    </style>
+    <!-- 외부방식
+         외부 파일에 작성 후 link 태그로 연결
+        rel: 무슨 관계인지
+        href: 연결할 파일이 어디있는지 -->
+    <link rel="stylesheet" href="./ex18외부.css">
+    
+</head>
+<body>
+    <!-- 인라인 방식
+         긴급시 사용, 우선순위 높음 -->
+    <h1 style="color: red">곧 끝나요!</h1>
+    <h2>오늘은 즐거운 수요일</h2>
+</body>
+</html>

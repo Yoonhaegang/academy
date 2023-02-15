@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        /* Flex : 레이아웃 배치 전용기능
+           내가 이 친구를 움직이고 싶다 : Item
+           아이템을 감싸고 있는 부모 요소 : Container */
+        .container {
+            background-color: lightgray;
+            height: 500px;
+            /* Container에 작성하는 요소 */
+            /* (1) flex 설정 */
+            display: flex;
+            /* (2) 배치 방향 설정 */
+            /* flex-direction */
+            /* flex-direction: row; */
+
+            /* 2-1) row
+               메인축 : 가로로 정렬 */
+               /* flex-direction: row; */
+            /* 2-2) column
+               메인축 : 세로로 정렬 */
+            /* flex-direction: column; */
+            /* (3) 메인축 정렬 : justify-content */
+            /* 만약 flex-direction이 row라면 가로로 정렬
+            column이라면 세로로 정렬 */
+            justify-content: center;
+            /* (4) 서브축 정렬 : align-items
+               만약 flex-direction이 row라면 세로로 정렬
+               column 이라면 가로로 정렬 */
+            align-items: center;
+            /* (5) 줄넘김처리 : flex-wrap
+               요소의 크기가 100%가 되면 줄이 넘어감 */
+               flex-wrap: wrap;
+        }
+        .item {
+            /* Item에게 작성해야 하는 요소 */
+            /* flex-basis: 아이템의 기본 크기 설정 */
+            flex-basis: 15%;
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            border: 1px solid black;
+
+            /* container로써 작성해야하는 요소 */
+            display: flex;
+            flex-direction: row; /* 가로로 작성(기본값이라 안적어도 됨) */
+            justify-content: center; /* 가운데 정렬 */
+            align-items: center; /* 세로축 정렬 */
+        }
+        #center {
+            flex-basis: 70%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">안녕하세요</div>
+        <div class="item" id="center">점심 맛있게 드셧나요</div>
+        <div class="item">전 배가 너무 불러요</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+        div {
+            background-color: lightgray;
+            width: 100px;
+            height: 100px;
+            /* overflow: 부모 요소의 범위를 벗어날 때 어떻게 처리해줄지
+               (1) visible: 기본 값
+               (2) hidden: 숨김처리
+               (3) scroll: 스크롤처리
+               (4) auto: 영역을 벗어나면 스크롤처리, 그렇지 않으면 스크롤 X */
+               overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        오쫄? 몰루? 오쫄? 몰루? 오쫄? 몰루? 오쫄? 몰루? 오쫄? 몰루? 오쫄? 몰루? 오쫄? 몰루?
+        오쫄? 몰루? 오쫄? 몰루? 오쫄? 몰루? 오쫄? 몰루? 오쫄? 몰루? 오쫄? 몰루? 오쫄? 몰루?
+        오쫄? 몰루? 오쫄? 몰루? 오쫄? 몰루? 오쫄? 몰루? 오쫄? 몰루? 오쫄? 몰루? 오쫄? 몰루?
+        오쫄? 몰루? 오쫄? 몰루? 오쫄? 몰루? 오쫄? 몰루? 오쫄? 몰루? 오쫄? 몰루? 오쫄? 몰루?
+    </div>
+</body>
+</html>

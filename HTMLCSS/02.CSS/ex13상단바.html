@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상단바</title>
+    <style>
+        .container {
+            background-color: pink;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+        }
+        .container > div {
+            /* border: 1px solid black; */
+            flex-basis: 15%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+            padding: 10px;
+            font-weight: 700;
+        }
+        #center {
+            flex-basis: 69%;
+        }
+        #center > a:hover {
+            background-color: black;
+            color: white;
+        }
+        #right {
+            justify-content: right;
+            /* font-weight: 500; */
+        }
+        #logo {
+            width: 80px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <img src="./부적.jpeg" width="100px" id="logo">
+            <h2> 바나나마스터</h2>
+        </div>
+        <div class="box2" id="center">
+            <a href="#">메뉴</a>
+            <a href="#">베스트</a>
+            <a href="#">뉴스</a>
+        </div>
+        <div class="box3" id="right">
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+        </div>
+    </div>
+</body>
+</html>
