@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 호이스팅
+        // 코드가 실행되면 메모리에 변수, 함수들을 미리 저장해둔다
+        console.log('script 위쪽 : ' + color)
+        // console.log('script 위쪽 let : ' + color2)
+
+        // let도 호이스팅이 일어나긴 한다.
+        // TDZ라는 공간에 메모리를 저장해두고
+        // 선언이 나오기 전까지는 접근이 불가능하게 만든다
+        // TDZ = Temporal Death Zone
+
+        // 변수 : 데이터를 담을 공간
+
+        // (1) var
+        var color = 'black' // 선언
+        var color = 'pink' // 재선언이 가능
+        color = 'yellow' // 재할당이 가능
+        console.log('var : ' + color)
+
+        // 2015년 ES6 이후 등장한 새로운 변수
+        // let, const
+
+        // (2) let
+        let color2 = 'black' // 선언
+        // let color2 = 'pink' // 재선언 불가
+        color2 = 'yellow' // 재할당 가능
+        console.log('let : ' + color2)
+
+        // (3) const
+        // 변하면 안되는 값 ex) 게임회사 만렙
+        // 누군가가 접근해서 재선언 / 재할당 하면 안되는 값
+        const color3 = 'black' // 선언
+        // const color3 = 'pink' // 재선언 불가
+        // color3 = 'yellow' // 재할당 불가
+    </script>
+</body>
+</html>

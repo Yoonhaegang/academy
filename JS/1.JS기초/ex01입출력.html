@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 스크립트 문법은 body태그 가장 하단에 작성
+        // script태그 안에 작성
+
+        // 1. 출력
+
+        // 1-1) console창에 출력하기
+        //      (F12 개발자 도구 -> console 탭)
+        console.log('Hello World!')
+        console.error('Error !!')
+        console.warn('WARNING!')
+
+        // 1-2) 팝업창에 출력하기
+        // alert('POP!')
+
+        // 1-3) 문서에 출력하기
+        document.write('문서에 출력!')
+
+        // 2. 입력
+
+        // 2-1) 확인질문 : confirm
+        //      => 확인(ture) or 취소(false) : boolean
+        var dinner = confirm('저녁 드셨나요?')
+        console.log(dinner)
+        // 2-2) 입력 확인문 : prompt
+        //      => 사용자가 입력 가능 : String
+        // prompt('질문(필수)', '기본값(선택)')
+        var dinner2 = prompt('어제 저녁 뭐드셨나요?', '소고기')
+        console.log('저녁에', dinner2, '먹었습니다.')
+    </script>
+</body>
+</html>

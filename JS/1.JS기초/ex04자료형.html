@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 자료형
+
+        // (1) string 문자 형태
+        // 큰따옴표(""), 작은따옴표(''), 백틱(``) 전부 사용가능
+        let name = '성호'
+        console.log('str : ', name)
+        console.log('str type : ', typeof(name))
+
+        // ** 타입을 구별하는 방법?
+        // a. typeof()
+        // b. console창의 색상
+
+        // (2) number 숫자 형태
+        let num1 = 3
+        let num2 = 3.14
+
+        console.log('num1 :', num1, typeof(num1))
+        console.log('num2 :', num2, typeof(num2))
+
+        // (3) boolean 참, 거짓
+        let check = false
+        console.log('boolean :', check)
+
+        // (4) undefined과 null의 구분
+
+        // 4-1) undefined : 정의가 되지 않았다
+        //     => 선언만 되고, 값이 할당되지 않은 상태
+        // JS는 초기 데이터로 자료형을 결정하는 동적인 언어이기 때문에
+        // 처음에 데이터를 넣지 않고 아래와 같이 선언한다면 undefined의 형태가 됨
+        let gf // 절대 이렇게 선언하거나 초기화 하지 말것!
+        console.log(gf)
+        console.log(typeof(gf))
+
+        // 4-2) null : 없다
+        //      => 의도적으로 그 공간을 비워줄 때
+        let money = 3000
+        money = null
+        console.log('얼마있으세요?', money)
+    </script>
+</body>
+</html>
