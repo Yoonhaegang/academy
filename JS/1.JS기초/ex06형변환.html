@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>형변환</title>
+</head>
+<body>
+    <script>
+        // 형변환
+        // 1. 숫자로 변환
+        let textFloat = "3.14"
+        // 1-1) 정수로 형변환 parseInt('바꿀내용')
+        let num1 = parseInt(textFloat)
+        console.log('textFloat :', textFloat)
+        console.log('정수로 변환 :', num1)
+
+        // 1-2) 실수로 형변환 parseFloat('바꿀내용')
+        let num2 = parseFloat(textFloat)
+        console.log('실수로 변환 :', num2)
+
+        // 1-3) 숫자로 형변환
+        let num3 = Number(textFloat)
+        console.log('숫자로 변환 :', num3)
+        // 2. 문자로 변환
+        let number = 10
+
+        // 2-1) 숫자.toString()
+        let str1 = number.toString(2) // n진법으로 변경이 가능하다
+        console.log('toString :', str1);
+
+        // 2-2) String(숫자)
+        let str2 = String(number)
+        console.log('String :', str2)
+    </script>
+</body>
+</html>

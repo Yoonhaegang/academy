@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1. 랜덤한 수를 하나 뽑아준다. (1 ~ 100)
+        // 2. 사용자에게 숫자를 입력 받아준다.
+        //      prompt 리턴타입 = String -> 형변환
+        // 3. 게임 결과를 판정
+        //      => 사용자 숫자 > 랜덤한 숫자 "입력한 숫자보다 작은 수 입니다"
+        //      => 사용자 숫자 < 랜덤한 숫자 "입력한 숫자보다 큰 수 입니다"
+        //      => 사용자 숫자 == 랜덤한 숫자 "정답입니다. 축하합니다"
+        let ranNum = parseInt(Math.random() * 100 + 1);
+        console.log('정답 :', ranNum)
+        while (true) {
+            let input = prompt('숫자를 입력하세요')
+            if (input === null) {
+                break;
+            } else {
+                parseInt(input)
+                if (ranNum === input) {
+                    alert('정답입니다')
+                    break;
+                } else if (ranNum < input) {
+                    alert('입력한 숫자보다 작은 수 입니다')
+                } else if (ranNum > input) {
+                    alert('입력한 숫자보다 큰 수 입니다')
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

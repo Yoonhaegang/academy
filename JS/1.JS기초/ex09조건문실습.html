@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 코로나 검사 프로그램
+
+        // 1. 사용자에게 코로나 검사 여부를 확인
+        //  ('코로나 검사 하셨나요?') => 확인, 취소
+
+        // 2-1) 코로나 검사를 했다면
+        //      사용자에게 양성 / 음성인지 여부를 확인
+        //      "결과가 양성이신가요? 음성이신가요?"
+
+        //      3-1) 사용자가 양성이라면
+        //          "집에서 5일간 격리하세요." 팝업창    
+        //      3-2) 사용자가 음성이라면
+        //          "안녕히 가세요"
+        // 2-2) 코로나 검사를 안했다면
+        //      팝업창으로 "검사하고 오세요!"
+        let check = confirm('코로나 검사 하셨나요?')
+        if(check) {
+            
+            let covid = prompt('결과가 양성이신가요? 음성이신가요?')
+            if(covid === "양성") {
+                alert('집에서 5일간 격리하세요')
+                document.getElementsByTagName('body')[0].style.backgroundColor = 'red'
+            } else if(covid === "음성") {
+                alert('안녕히가세요')
+                document.getElementsByTagName('body')[0].style.backgroundColor = 'green'
+            } else {
+                alert('잘못입력하셨습니다 다시 입력해주세요')
+            }
+        } else {
+            alert('검사하고 오세요')
+        }
+    </script>
+</body>
+</html>
