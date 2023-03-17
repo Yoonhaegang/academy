@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 지금부터 가위바위보를 시작하겠습니다.
+
+        // 1. arr라는 배열 안에 '가위', '바위', '보' 라는 데이터를 넣습니다.
+        let arr = ['가위', '바위', '보'];
+        
+        // 2. 사용자의 선택을 입력 받습니다. (userChoice)
+        //      "무엇을 내시겠습니까?(가위,바위,보)"
+        let userChoice = prompt('무엇을 내시겠습니까?(가위, 바위, 보)')
+
+        // 3. 컴퓨터의 선택을 세팅합니다. (comChoice)
+        //      랜덤한 수를 활용 => 배열 안에 랜덤한 인덱스 값을 추출 
+
+        // arr[0] => 가위 / arr[1] => 바위 / arr[2]=> 보
+        let ranNum = parseInt(Math.random()*3)
+        console.log('랜덤한 수:', ranNum);
+
+        let comChoice = arr[ranNum]
+
+        // 4. console창에 나의 선택, 컴퓨터의 선택을 출력 
+        //  ex) 나의 선택 : 가위 
+        //      컴퓨터의 선택 : 바위 
+        console.log('나의 선택:', userChoice);
+        console.log('컴퓨터의 선택 :', comChoice);
+
+        // 5. 결과를 출력 
+        // 결과는 사용자 입장에서 승리, 패배, 무승부 
+        // "승리입니다!" , "패배입니다!", "무승부입니다!"
+        // "게임 오류 입니다!"
+
+        let result = '게임 오류'
+
+        if(userChoice === comChoice){
+            result = '무승부'
+        } else if (userChoice === '가위'){
+            result = comChoice === '바위' ? '패배' : '승리'
+        } else if (userChoice === '바위'){
+            result = comChoice === '보' ? '패배' : '승리'
+        } else if (userChoice === '보'){
+            result = comChoice === '가위' ? '패배' : '승리'
+        }
+
+        alert(result+'입니다!')
+
+        // Hint! 
+        // 1. 컴퓨터 결정 == 사용자 결정  
+        //      => 무승부 
+        // 2. 단, 삼항연산자로 쓰면 코드가 짧아진다. 
+
+
+    </script>
+</body>
+
+</html>

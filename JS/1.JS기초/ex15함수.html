@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 호이스팅
+        makeJuice()
+        // 함수 : 특징 기능들을 묶어서 호출할 수 있도록 하는 기능
+        //      장점? 코드가 반복되지 않고 재사용성이 뛰어나다
+        // 함수를 나타내는 괄호 : 소괄호 ()
+        
+        
+        // (1) 함수의 선언
+        // function 함수이름() {
+        // 
+        // }
+        // () - 매개변수 : 함수의 재료
+        // {} - 누군가가 이 함수를 호출 했을 때, 실행시킬 로직
+        function makeJuice() {
+            console.log('===========================');
+            console.log('주스 제조 시작!');
+            console.log('오렌지를 착즙한다.');
+            console.log('오렌지 주스 완성! 🍊');
+            console.log('===========================');
+            return 3000
+        }
+        // (2) 함수의 호출 : 함수를 실행하려면 호출은 필수!
+        // 함수이름()
+
+        makeJuice()
+        makeJuice()
+
+        // (3) 매개변수를 이용한 함수
+        function makeAnyJuice(fruit) {
+            console.log('===========================');
+            console.log(fruit + '제조 시작!');
+            console.log(fruit + '를 착즙한다.');
+            console.log(fruit + '주스 완성!');
+            console.log('===========================');
+        }
+        makeAnyJuice('자몽')
+        makeAnyJuice('레몬')
+
+        // (4) return을 이용한 함수
+        // 단순 실행 뿐만 아니라, 함수로 인한 특정 값을 받고 싶다면
+        // 함수 내 return 문 안에 작성한다
+        // 단, return 문은 로직 가장 아래에 있어야 한다
+        let price = makeJuice()
+        console.log('가격은', price, '원 입니다');
+
+        // 호이스팅을 방지해서 함수를 let, const 안에 넣어보자
+        // const makeToast = function() {
+        //     console.log('토스트 제조!');
+        // }
+        // makeToast()
+
+        // (5) 화살표 함수 Arrow Function
+        // const 함수이름 = () => {}
+        
+        const makeToast = () => {
+            console.log('토스트 제조!');
+        }
+        makeToast()
+    </script>
+</body>
+</html>

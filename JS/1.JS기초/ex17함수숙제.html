@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 숙제) 햄버거 주문 시스템만들기 
+        // 요구 능력 : 함수 
+
+        // Step 1
+        // (1) 햄버거를 제작하는 함수를 만들어라 : makeBurger 
+        // (2) 햄버거를 만드는 함수를 호출하면 
+        //     console창에 빵깔기, 토마토 올리기, 패티 올리기, 빵닫기 
+        // (3) 햄버거의 가격은 5000원입니다.  5000을 반환해주세요 (return)
+        const makeBurger = () => {
+            console.log('빵깔기');
+            console.log('토마토 올리기');
+            console.log('패티 올리기');
+            console.log('빵닫기');
+            return 5000
+        }
+    
+        // Step 2
+        // (1) 콜라를 만드는 함수를 작성, 가격은 2000(return 2000)
+        //     '콜라 완성' => 콘솔
+        const coke = () => {
+            console.log('콜라 완성');
+            return 2000
+        }
+        const frenchFries = () => {
+            console.log('감자튀김 완성')
+            return 0
+        }
+        // Step 3
+        // (1) 사용자에게 먹고싶은 햄버거 메뉴를 입력 받습니다.
+        //     ex) 불고기, 치즈, 핫크리스피 ... 
+        let hamburger = prompt('먹고 싶은 햄버거 메뉴를 알려주세요')
+        // (2) 세트메뉴인지 단품메뉴인지 입력받습니다.
+        //     ex) 단품, 세트 
+        let menu = prompt('단품 or 세트')
+        // Step 4
+        // (1) 만약 사용자가 '단품'을 입력 했을 경우, 햄버거를 만드는 함수만 호출 
+        // (2) 만약 사용자가 '세트'를 입력했을 경우, 햄버거, 콜라, 감튀 함수 모두 호출 A    
+        // (3) 마지막에 사용자가 지불해야하는 가격을 console창에 출력 
+        //      지불하실 가격은 XXXX 원 입니다. 
+        if(menu === '단품') {
+            makeBurger()
+        } else if(menu === '세트') {
+            console.log(`지불하실 금액은 ${makeBurger() + coke() + frenchFries()}원입니다`);
+            
+        }
+        
+
+    </script>
+</body>
+</html>

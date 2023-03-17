@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. 두개의 수를 받아서 더해주는 plus 라는 함수를 생성
+        const plus = (a, b) => {
+            return a + b
+        }
+        // 2. 두개의 수를 받아서 빼주는 minus 라는 함수를 생성
+        //    단, 큰 값 - 작은 값
+        const minus = (a, b) => {
+            return a >= b ? a - b : b - a
+        }
+        const mul = (a, num2) => {
+            return a * num2
+        }
+        const div = (a, b) => {
+            return a >= b ? a / b : b / a
+            
+        }
+        // 3. 사용자에게 숫자를 두번 입력 받는다
+        //    첫번째 숫자를 입력하세요, 두번재 숫자를 입력하세요
+        let num1 = parseInt(prompt('첫 번째 숫자를 입력하세요'))
+        let num2 = parseInt(prompt('두 번째 숫자를 입력하세요'))
+        // 4. 사용자에게 기호를 입력받는다 (+ , -)
+        //    기호를 입력하세요 (+, -)
+        let giho = prompt('기호를 입력하세요')
+        // 5. 결과를 팝업창으로 띄워준다
+        // ex) 연산결과는 15입니다
+        if(giho == '+') {
+            alert('연산결과는 ' + plus(num1, num2) + '입니다')
+        } else if(giho == '-') {
+            alert('연산결과는 ' + minus(num1, num2) + '입니다')
+        } else if(giho == '*') {
+            alert('연산결과는 ' + mul(num1, num2) + '입니다')
+        } else if(giho == '/') {
+            alert('연산결과는 ' + div(num1, num2) + '입니다')
+        }
+        // 단, 무조건 함수를 생성, 호출해서 문제를 풀것
+
+    </script>
+</body>
+</html>

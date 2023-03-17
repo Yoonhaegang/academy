@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 객체 : 속성과 값으로 구성되어 있는 데이터의 집합
+        // ** 객체를 나타내는 괄호 : 중괄호 {}
+
+        // (1) 객체 선언
+        let person = {
+            name : '지드래곤',
+            birthYear : 1988,
+            group : '빅뱅'
+        }
+
+        // (2) 객체 출력
+        console.log('object :', person);
+
+        // (3) 객체 내 데이터에 접근하는 방법 key값을 이용해서 접근
+
+
+        // Case1) 객체이름.key이름 ⭐️
+        console.log('이름 :', person.name);
+
+        // Case2) 객체이름['key이름']
+        console.log('그룹 :', person['group']);
+
+        // (4) 객체 내 데이터 변경하기
+        person.name = 'G-Dragon'
+        console.log('object :', person);
+
+        // ** 배열 안에 객체를 넣을 수 있고, 객체 안에 배열을 넣을 수 있다
+        // (1) 배열 안에 객체 넣기
+        let orderList = [{name : '아메리카노', stamp : true}, 
+                         {name : '카페라떼', stamp : false}]
+
+        console.log('list', orderList[1].name);
+
+        
+        // (2) 객체 안에 배열 넣기
+        let number2 = {
+            name : '선영표',
+            hobby : ['캠핑', '코딩', '게임']
+        }
+        console.log('취미는 :', number2.hobby[1]);
+
+        // 신문법 Time ~ 
+        // let list = {
+        //     movie : '아메리카노',
+        //     nature : '카페라떼'
+        // }
+
+        // console.log(list.movie);
+
+        // 객체 비구조화 할당
+        let {movie, nature} = {
+            movie : '아메리카노',
+            nature : '카페라떼'
+        }
+        console.log(movie);
+
+        // 객체 생성 {pokemon}
+        // 3마리 => name, type, age
+        // 1) 피카츄, 전기, 3살
+        // 2) 꼬북이, 물, 2살
+        // 3) 파이리, 불, 1살
+        // [{}, {}, {}]
+        let {name, type, age} = {
+            name : ['피카츄', '꼬북이', '파이리'],
+            type : ['전기', '물', '불'],
+            age : ['3살', '2살', '1살']
+        }
+        // 출력 제가 가장 좋아하는 포켓몬은 메타몽이고 변신속성이고 2살입니다
+        console.log('제가 가장 좋아하는 포켓몬은 ' + name[1] + '이고 ' + type[1] + '속성이고 ' + age[1] + '입니다');
+    </script>
+</body>
+</html>
